@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="p5.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <header>
+            <div class="p-3 mb-2 bg-info text-white">
+                Rays
+                <form>
+                    <div class="form-group">
+                        <input
+                            type="range"
+                            min="8"
+                            max="3600"
+                            value="360"
+                            class="form-control-range"
+                            id="raysNumber"
+                            oninput="changeRaysNumber(this.value)"
+                        />
+                    </div>
+                </form>
+            </div>
+        </header>
+        <script src="ray.js"></script>
+        <script src="player.js"></script>
+        <script src="boundary.js"></script>
+        <script src="sketch.js"></script>
+    </body>
+</html>
